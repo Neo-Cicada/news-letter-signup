@@ -31,7 +31,7 @@ main{
 }
 .container{
     background-color: var(--White);
-    width: 60%;
+    width: 55%;
     height: 70%;
     border-radius: 16px;
     display: flex;
@@ -46,8 +46,8 @@ ul{
     padding-left: 5%;
     display: flex;
     flex-direction: column;
-    width: 55%;
-    gap: 8%;
+    width: 54%;
+    gap: 1.5em;
 }
 h1{
     font-family: var(--font-family);
@@ -56,16 +56,16 @@ h1{
     font-size: 2rem;
 }
 .second{
-    border: 1px solid red;
     height: 100%;
-    width: 50%;
+    width: 45%;
     display: flex;
     align-items: center;
-
 }
 .svg-img{
+    margin-top: 5%;
+    margin-bottom: 5%;
     width: 100%;
-  height: 100%;
+    height: 90%;
 }
 .email{
     display: flex;
@@ -73,15 +73,17 @@ h1{
 }
 small{
     font-weight: var(--font-weight-bold);
+    font-size: 14px;
 }
 .email-field{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 2.5em;
-    width: 22em;
+    width: 20.5em;
     border-radius: 5px;
     border: 1px solid var(--grey);
+    padding-left: 5%;
 }
 button{
     height: 2.5em;
@@ -90,4 +92,36 @@ button{
     border-style: none;
     color: var(--White);
     background-color: var(--dark-slate-grey);
+    cursor: pointer;
+
+}
+button:active{
+    background-color: var(--primary-color);
+}
+
+@media(max-width: 38em){
+    main{
+        height: 100vh;
+        width: 100vw;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
+        display: grid;
+        grid-template-rows: 40% 70%;
+        }
+    .second{
+        border: 1px solid red;
+        grid-row-start: 1;
+        width: 100%;
+    }
+    .svg-img{
+        width: 100%;
+        height: 100%;
+    }
+    .first{
+        border: 1px solid red;
+        width: 100%;
+    }
 }
