@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --primary-color: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+
+    --font-family: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-size: 1rem;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--dark-slate-grey);
+    font-size: var(--font-size);
+}
+
+main{
+    background-color: var(--charcoal-grey);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: var(--White);
+    width: 60%;
+    height: 70%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+}
+
+.first{
+    padding-top: 6%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 8%;
+}
+h1{
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-bold);
+    color: var(--dark-slate-grey);
+    font-size: 2rem;
+}
+.second{
+    border: 1px solid red;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.svg-img{
+    width: 100%;
+  height: 100%;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+small{
+    font-weight: var(--font-weight-bold);
+}
+.email-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5em;
+    width: 22em;
+    border-radius: 5px;
+    border: 1px solid var(--grey);
+}
+button{
+    height: 2.5em;
+    width: 22em;
+    border-radius: 5px;
+    border-style: none;
+    color: var(--White);
+    background-color: var(--dark-slate-grey);
+}
