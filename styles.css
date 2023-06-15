@@ -47,7 +47,8 @@ ul{
     display: flex;
     flex-direction: column;
     width: 54%;
-    gap: 1.5em;
+
+
 }
 h1{
     font-family: var(--font-family);
@@ -62,10 +63,14 @@ h1{
     align-items: center;
 }
 .svg-img{
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-right: 5%;
     width: 100%;
     height: 90%;
+    background-image: url('./assets/images/illustration-sign-up-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
 }
 .email{
     display: flex;
@@ -98,30 +103,57 @@ button{
 button:active{
     background-color: var(--primary-color);
 }
+.insider{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    height: 33%;
+    width: 100%;
+}
 
-@media(max-width: 38em){
-    main{
+@media (max-width: 35em) {
+    .container{
         height: 100vh;
         width: 100vw;
-    }
-    .container{
-        height: 100%;
-        width: 100%;
-        border-radius: 0px;
+        border-radius: 0;
         display: grid;
-        grid-template-rows: 40% 70%;
-        }
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 60%;
+
+    }
     .second{
-        border: 1px solid red;
         grid-row-start: 1;
         width: 100%;
     }
     .svg-img{
-        width: 100%;
+        margin: 0;
         height: 100%;
+        background-image: url('./assets/images/illustration-sign-up-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 0;
+        display: flex;
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+
     }
     .first{
-        border: 1px solid red;
-        width: 100%;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+    }
+    button, .email-field{
+        width: 90%;
     }
 }
