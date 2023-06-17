@@ -111,6 +111,9 @@ button:active{
     width: 100%;
 }
 
+#success{
+    display: none;
+}
 @media (max-width: 35em) {
     .container{
         min-width: 350px;
